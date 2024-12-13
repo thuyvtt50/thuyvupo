@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Manrope:wght@200..800&family=MonteCarlo&display=swap');
+@import url("../fonts/stylesheet.css");
+
+
+body
+{
+	background-color:rgba(255,255,255,1.00);
+	color: rgba(0,0,0,0.8);
+	font-family: "Manrope", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px	;
+	margin: 0
+}
+h1{	font-size: 2.5rem; 	}
+h2{ font-size: 2rem}
+h3{ font-size: 1.5rem}
+h4{font-size: 1.2rem}
+p{ line-height: 1.5rem}
+h1,h2,h3 ,h4
+{
+	font-family: font-svn,"Literata",Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight: 400;color: #3E3E3E}
+a{ 
+	color: rgba(0,0,0,0.7);
+	text-decoration: none
+}
+a:hover{
+	/*
+	color:rgba(213,167,252,1)*/
+ background: linear-gradient(90deg, rgba(162,22,182,1) 0%, rgba(249,1,114,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-dacbiet
+{
+	font-family: "MonteCarlo", cursive;
+  	font-weight: 800;
+	font-size: 2rem;
+	
+}
+.font-quanquai
+{
+	font-family:SVN-Mutlu;
+}
+.font-noel
+{
+	    font-family: 'Merry Christmas Star';
+}
+.font-sushi
+{
+	    font-family: 'Asian Food';
+	font-size: 3rem
+}
+.ss-icon i { margin: 10px}
+/*---- color style----------*/
+.bg-primary { background-color:rgba(213,167,252,1)}
+.bg-primary-5 { background-color: rgba(213,167,252,0.2)}
+.bg-primary-10 { background-color: rgba(213,167,252,0.5)}
+.bg-light{ background: #DBDBDB}
+.bg-dark{ background: #363636}
+.text-primary{ color: rgba(191,7,156,1.00)}
+a.text-primary:hover{ color: hotpink}
+.text-light{ color: #eeeeee }
+.text-dark {color: rgba(49,7,37,1.00)}
+/*--- style cho button - nut mau chinh----*/
+a.btn-primary
+{
+	background-color: rgba(213,167,252,1);
+	color: white;
+	text-decoration: none;
+	padding:10px 40px ;
+	cursor: pointer;
+	text-transform:uppercase;
+	font-weight: 600
+	
+}
+a.btn-primary:hover { 
+
+border:2px solid hotpink;
+	color: white
+}
+/*--- ----he thong luoi phone - mobile first phone truoc--------------*/
+*{ box-sizing: border-box}
+.col-1 { width: 8.33333%}
+.col-2 { width: 16.66667%}
+.col-3 { width: 25%}
+.col-4 { width: 33.33333%}
+.col-5 { width:  41.66667%}
+.col-6 { width:  50%}
+.col-7 { width:  58.33333%}
+.col-8 { width:  66.66667%}
+.col-9 { width: 75%}
+.col-10 { width:  83.33333%}
+.col-11 { width:  91.66667%}
+.col-12 { width: 100%}
+/*-- he thong 12 cột medium cho thiết bị loại trung (tablet) ipad*/
+@media (min-width:600px)
+{
+	.col-md-1 { width: 8.33333%}
+.col-md-2 { width: 16.66667%}
+.col-md-3 { width: 25%}
+.col-md-4 { width: 33.33333%}
+.col-md-5 { width:  41.66667%}
+.col-md-6 { width:  50%}
+.col-md-7 { width:  58.33333%}
+.col-md-8 { width:  66.66667%}
+.col-md-9 { width: 75%}
+.col-md-10 { width:  83.33333%}
+.col-md-11 { width:  91.66667%}
+.col-md-12 { width: 100%}
+}
+/*-- hệ thống cột lớn large cho thiết bị từ 1000px trở lên ( pc)*/
+@media (min-width:1000px)
+{
+	.col-lg-1 { width: 8.33333%}
+.col-lg-2 { width: 16.66667%}
+.col-lg-3 { width: 25%}
+.col-lg-4 { width: 33.33333%}
+.col-lg-5 { width:  41.66667%}
+.col-lg-6 { width:  50%}
+.col-lg-7 { width:  58.33333%}
+.col-lg-8 { width:  66.66667%}
+.col-lg-9 { width: 75%}
+.col-lg-10 { width:  83.33333%}
+.col-lg-11 { width:  91.66667%}
+.col-lg-12 { width: 100%}
+	
+}
+[class*="col-"]
+{
+	border:1px solid red;
+	padding: 15px
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.container{	width: 100%;  }
+@media (min-width:600px)
+{
+	.container
+	{	
+		width: 80%;
+		margin: auto/* lệnh này đẩy box 80% này vào giữa*/
+	}
+}
+.img-100
+{
+	max-width: 100%;
+	height: auto
+}
+.text-center{ text-align: center}
+/*-------- spacing style margin-------*/
+.mx-auto{ margin-left:auto; margin-right: auto}
+.mt-1{ margin-top: 4px}
+.mt-2{ margin-top: 8px}
+.mt-3{ margin-top: 12px}
+.mt-4{ margin-top: 16px}
+.mt-5{ margin-top: 24px}
+.mt-6{ margin-top: 72px}
+/*------------------*/
+.mb-1{ margin-bottom: 4px}
+.mb-2{ margin-bottom: 8px}
+.mb-3{ margin-bottom: 12px}
+.mb-4{ margin-bottom: 16px}
+.mb-5{ margin-bottom: 24px}
+.mb-6{ margin-bottom: 72px}
+/*-------- spacing style padding-------*/
+.p-0{ padding: 0}
+.px-40{ padding: 0 40px}
+.py-40{ padding: 40px 0}
+.text-right{ text-align: right}
+
+
+/*---- style cho navbar----*/
+nav{	padding: 10px 0 }
+nav .container{
+	position: relative
+}
+nav .nav-brand { 
+	font-size: 1.2rem; 
+	font-weight: 600; 
+	margin-left: 10px;
+	 background: linear-gradient(90deg, rgba(162,22,182,1) 0%, rgba(249,1,114,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav .btn-toggle
+{
+	position: absolute; 
+	right: 5px;
+	top: 0;
+	cursor: pointer;
+	background: #F7EDFF;
+	border: 1px solid #E900CB;
+	color: #BF079C;
+	font-size: 1.2rem;
+	font-weight: bold
+}
+#menu{ margin-top: 10px;  }
+#menu ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0	
+}
+#menu ul li { position: relative}
+#menu ul li a
+{
+	padding: 5px 10px;
+	display: block;
+	border-bottom: 1px solid #ddd
+}
+#menu { display: none}
+#dropdown-menu a{margin-left: 20px;}
+#dropdown-menu{ display: none }
+@media (min-width:992px)
+{
+	#menu { display: block !important}
+	nav .btn-toggle{ display: none}
+	nav .container ,#menu ul
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center
+	}
+	#menu ul li a
+	{ border:none}
+	
+	#dropdown-menu{ 
+		position: absolute; top: 100%; left: 0;
+		width: 200px; 
+		background: white;
+		text-align: left;
+		display:flex;
+		flex-direction: column;
+		align-items: flex-start; justify-content: flex-start;
+	}
+	#dropdown-menu a{margin-left: 0px; display: none }
+
+}
+
+.td-trang{
+	max-height:200px;
+	padding: 40px 0;
+	background: pink;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		background: linear-gradient(90deg, rgba(162,22,182,1) 0%, rgba(249,1,114,1) 100%);
+	color: white
+}
+.td-trang h1, .td-trang p,.td-trang a{  margin: 0;color: white}
+.td-trang a:hover{ 
+	background: linear-gradient(90deg, pink 0%, white 100%);
+	 -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+footer .i-ss a{ margin-right:5px}
+/*------- day cac thanh pham trong 1 flex theo chieu doc*/
+.align-item-center{ align-items: center}
+.align-item-end{ align-items: flex-end}
+/*------- day cac thanh pha trong 1 flex theo chieu ngang*/
+.justify-center{ justify-content: center}
+.justify-end{ justify-content: flex-end}
+.justify-between{ justify-content: space-between}
+.flex-row-reverse{ flex-direction: row-reverse}
+
+#testimonial .img-avata
+{
+	width: 100px; height: 100px;
+	border: 3px solid pink;
+	border-radius: 50%;
+	display: block; margin: auto
+}
+
+.progress-bar
+{
+	width: 100%; height: 8px;
+	background: #ddd;
+	border-radius: 10px
+}
+.progress
+{
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	position: relative
+}
+.progress span
+{
+	font-size: 0.8rem;
+	position: absolute; right: 0;
+	top: -19px;
+	font-weight: 800
+}
+#project img
+{ 
+	height:250px; 
+	transition: all 0.5s
+}
+#project img:hover {
+	transform: scale(1.1) rotate(5deg)
+}
+
